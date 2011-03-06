@@ -1,0 +1,12 @@
+{application, mysore,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { mysore_app, []}},
+  {env, []}
+ ]}.
