@@ -1,5 +1,5 @@
+%%% @doc Application
 -module(mysore_app).
-
 -behaviour(application).
 
 %% API
@@ -8,9 +8,6 @@
         ]).
 
 
-%% ===================================================================
-%% Application callbacks
-%% ===================================================================
 start(_Type, _Args) -> mysore_sup:start_link().
 
 stop(_State) -> ok.

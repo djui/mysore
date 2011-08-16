@@ -3,9 +3,8 @@
   {description, "Transactional Record Manager for Shared Flash"},
   {vsn, "1"},
   {registered, []},
-  {applications, [
-                  kernel,
-                  stdlib
+  {applications, [ kernel
+                 , stdlib
                  ]},
   {mod, { mysore_app, []}},
   {env, []}
