@@ -1,6 +1,6 @@
 {application, mysore,
  [
-  {description, ""},
+  {description, "Transactional Record Manager for Shared Flash"},
   {vsn, "1"},
   {registered, []},
   {applications, [
