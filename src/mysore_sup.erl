@@ -1,4 +1,6 @@
-%%% @doc Supervisor
+%% -*- erlang-indent-level: 2; indent-tabs-mode: nil -*-
+%% ex: ts=2 sw=2 et
+%% @doc Supervisor
 -module(mysore_sup).
 -behaviour(supervisor).
 
@@ -17,9 +19,3 @@ init([]) ->
   {ok, { {one_for_one, 5, 10}
        , [?CHILD(mysore, worker)]
        }}.
-
-%%% Local Variables:
-%%% erlang-indent-level: 2
-%%% indent-tabs-mode: nil
-%%% End:
-%%% ex: ts=2 sw=2 et

@@ -1,11 +1,13 @@
+%% -*- erlang -*-
 {application, mysore,
- [
-  {description, "Transactional Record Manager for Shared Flash"},
-  {vsn, "1"},
-  {registered, []},
-  {applications, [ kernel
-                 , stdlib
-                 ]},
-  {mod, { mysore_app, []}},
-  {env, []}
+ [ {description, "Transactional Record Manager for Shared Flash"}
+ , {vsn, "1.0.0.0"}
+ , {modules, [ mysore
+             , mysore_app
+             , mysore_sup
+             ]}
+ , {registered, [ mysore_sup ]}
+ , {applications, [kernel, stdlib]}
+ , {mod, {mysore_app, []}},
+ , {env, []}
  ]}.

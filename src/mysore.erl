@@ -1,4 +1,6 @@
-%%% @doc Core
+%% -*- erlang-indent-level: 2; indent-tabs-mode: nil -*-
+%% ex: ts=2 sw=2 et
+%% @doc Core
 -module(mysore).
 -behaviour(gen_server).
 
@@ -34,9 +36,3 @@ handle_info(_Call, State) -> {noreply, State}.
 code_change(_OldVsn, State, _Extra) -> {ok, State}.
 
 terminate(normal, _State) -> ok.
-
-%%% Local Variables:
-%%% erlang-indent-level: 2
-%%% indent-tabs-mode: nil
-%%% End:
-%%% ex: ts=2 sw=2 et
