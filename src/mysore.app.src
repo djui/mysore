@@ -8,6 +8,6 @@
              ]}
  , {registered, [ mysore_sup ]}
  , {applications, [kernel, stdlib]}
- , {mod, {mysore_app, []}},
+ , {mod, {mysore_app, []}}
  , {env, []}
  ]}.
